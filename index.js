@@ -17,7 +17,7 @@ const mongoURL = process.env.MONGODB_URI;
 const User = require("./models/user");
 const app = express();
 
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 app.use(cors())
 app.use(express.json());
 
